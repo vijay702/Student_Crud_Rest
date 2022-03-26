@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dailycodebuffer.springboot</groupId>
-	<artifactId>Students-crud</artifactId>
+	<artifactId>Students-crud-all</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Students-crud</name>
+	<name>Students-crud-all</name>
 	<description>project for job interview </description>
 	<properties>
 		<java.version>11</java.version>

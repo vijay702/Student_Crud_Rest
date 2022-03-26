@@ -66,8 +66,14 @@ public class StudentController {
 		
 	}
 	
-	
-	
+	@GetMapping("/students/name/{name}")
+	public  Student getStudentByStudentName (@PathVariable("name") String studentName) throws StudentNotFoundException {
+		
+		
+		return studentService.getStudentByStudentName(studentName);
+		
+		
+	}
 	
 	
 	

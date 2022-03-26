@@ -102,6 +102,19 @@ Student tempStudent = studentRepo.findById(registerNumber).get();
 		return studentRepo.save(tempStudent);
 	}
 
+	@Override
+	public Student getStudentByStudentName(String studentName) throws StudentNotFoundException {
+		
+		java.util.Optional<Student> student = studentRepo.findByStudentName(studentName);
+		 
+		 if(!student.isPresent()) {
+			 
+			 throw new StudentNotFoundException("Enter a exisiting name  , Data Not Aviable");
+		 }
+		 
+		 return student.get();
+	}
+
 	
 	
 

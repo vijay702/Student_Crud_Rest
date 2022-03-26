@@ -17,6 +17,10 @@ public interface StudentService {
 
 	public Student updateStudentByID(Long registerNumber, Student theStudent);
 
+	public Student getStudentByStudentName(String studentName) throws StudentNotFoundException;
+
+
+
 
 
 	
